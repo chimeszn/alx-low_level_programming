@@ -3,14 +3,14 @@
 #include <stdio.h>
 
 /**
- * main - assigns random number to int n when executed,
- * and prints it
+ * main - assigns a random numnber to int n everytime
+ * it executes, and prints it
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int n;
-
+	
 	srand(time(0));
 	n = rand() - RAND-MAX / 2;
 	if (n > 0)
