@@ -3,7 +3,6 @@
 /**
  * print_square - prints a square followed by a new line
  * @size: size of square (length and width)
- * @#: character to represent the square
  * Return: void
  */
 
