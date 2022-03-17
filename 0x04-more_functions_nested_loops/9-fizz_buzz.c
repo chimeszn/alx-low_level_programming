@@ -2,10 +2,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the numbers from 1 to 100, followed by a new line
- * but for multiples of three, prints Fizz instead of the number
- * and for the multiples of five, prints Fizz and for multiples of
- * both, FizzBuzz.
+ * main - prints the FizzBuzz challenge
  * Return: Always 0 (Success)
  */
 
@@ -13,7 +10,7 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; n <= 100; n++)
+	for (n = 1; n <= 100; n++)
 	{
 		if (n % 5 == 0 && n % 3 == 0)
 			printf("FizzBuzz ");
