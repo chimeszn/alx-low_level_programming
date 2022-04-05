@@ -4,7 +4,7 @@
 /**
  * create_array - creates an array of chars
  * @size: size of the array
- * @c: stored character
+ * @c: storaged character
  * Return: pointer of an array of chars
  */
 
@@ -24,7 +24,7 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < size; i++;)
+	for (i = 0; i < size; i++)
 	{
 		cr[i] = c;
 	}
