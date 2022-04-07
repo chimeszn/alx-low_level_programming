@@ -3,29 +3,29 @@
 
 /**
  * array_range - creates an array of integers
- * @min: first integer
- * @max: second integer
- * Return: pointer to newly allocated memory
+ * @min: minimum range of values
+ * @max: maximum range of values
+ * Return: pointer to new array
  */
 
 int *array_range(int min, int max)
 {
-	int i, j;
-	int *a;
+	int *ptr;
+	int i, size;
 
 	if (min > max)
 		return (NULL);
 
-	j = max - min + 1;
-	a = malloc(sizeof(int) * j);
+	size = max - min + 1;
 
-	if (a == NULL)
+	ptr = malloc(sizeof(int) * size);
+
+	if (ptr == NULL)
 		return (NULL);
 
-	for (i = 0; i < j; i++; min++)
-	{
-		a[i] = min;
-	}
+	for (i = 0; min <= max; i++)
+		ptr[i] = min++;
 
-	return (a);
+	return (ptr);
 }
+
