@@ -8,3 +8,11 @@ This is a READ Me file containing what each files do
 the function int_index returns the index of the first element for ehich the cmp function does not return 0
 If no element matches, it returns 1
 If size <= 0, it returns -1
+
+4. 3-calc.h - a header file containing all function prototypes and data structures used in writing the "3-" programs
+
+5. 3-op_functions.c - contains functions that calculate arithmetic operations
+
+6. 3-get_op_func.c - function pointer that returns the pointer of the arithmetic functions
+
+7. 3-main.c - entry point
