@@ -1,4 +1,4 @@
-#include "limits.h"
+#include "lists.h"
 
 /**
  * add_node_end - adds a new node at the end of a list_t list
@@ -14,11 +14,11 @@ list_t *add_node_end(list_t **head, const char *str)
 	unsigned int len = 0;
 
 	while (str[len])
-		len+;
+		len++;
 
 	new = malloc(sizeof(list_t));
 	if (!new)
-		return NULL;
+		return (NULL);
 
 	new->str = strdup(str);
 	new->len = len;
